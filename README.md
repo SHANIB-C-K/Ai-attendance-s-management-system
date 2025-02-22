@@ -20,8 +20,8 @@ This project implements an attendance system using face recognition technology. 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/SHANIB-C-K/Ai-face-detection-using-opencv.git
-   cd Ai-face-detection-using-opencv
+   git clone https://github.com/SHANIB-C-K/Ai-attendance-s-management-system.git
+   cd Ai-attendance-s-management-system.git
    ```
 
 2. Install the required packages:
