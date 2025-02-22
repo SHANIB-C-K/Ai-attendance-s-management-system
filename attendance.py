@@ -53,6 +53,8 @@ while True:
         attendance=[str(output[0]), str(timestamp)]
     frame = cv2.resize(frame, (640, 425))  # Resize frame to fit the target region
     # imgBackground[162:162 + 425, 55:55 + 640] = frame  # Adjust the region accordingly
+    cv2.putText(frame, "Press q to exit", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
+    cv2.putText(frame, "Press o to take attendance", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
     cv2.imshow("Frame",frame)
     k=cv2.waitKey(1)
     if k==ord('o'):
