@@ -52,8 +52,8 @@ while True:
         cv2.rectangle(frame, (x,y), (x+w, y+h), (50,50,255), 1)
         attendance=[str(output[0]), str(timestamp)]
     frame = cv2.resize(frame, (640, 425))  # Resize frame to fit the target region
-    imgBackground[162:162 + 425, 55:55 + 640] = frame  # Adjust the region accordingly
-    cv2.imshow("Frame",imgBackground)
+    # imgBackground[162:162 + 425, 55:55 + 640] = frame  # Adjust the region accordingly
+    cv2.imshow("Frame",frame)
     k=cv2.waitKey(1)
     if k==ord('o'):
         speak("Attendance Taken..")
